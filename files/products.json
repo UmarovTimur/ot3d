@@ -1,0 +1,68 @@
+{
+   "products": [
+      {
+         "id": 1,
+         "title": "test goods",
+         "name": "products",
+         "labels": [
+            {
+               "type": "sale",
+               "value": "50"
+            }
+         ],
+         "image": "img/products.jpg",
+         "price": "20$"
+      },
+      {
+         "id": 2,
+         "title": "Модель для чпу",
+         "name": "products",
+         "labels": [
+            {
+               "type": "new",
+               "value": "New"
+            }
+         ],
+         "image": "img/products.jpg",
+         "price": "8$"
+      },
+      {
+         "id": 3,
+         "title": "Скидка",
+         "name": "products",
+         "labels": [
+            {
+               "type": "sale",
+               "value": "90"
+            },
+            {
+               "type": "new",
+               "value": "New"
+            }
+         ],
+         "image": "img/products.jpg",
+         "price": "1$"
+      },
+      {
+         "id": 4,
+         "title": "Без скидки",
+         "name": "products",
+         "labels": [],
+         "image": "img/products.jpg",
+         "price": "31$"
+      },
+      {
+         "id": 5,
+         "title": "3d models",
+         "name": "prod5",
+         "labels": [
+            {
+               "type": "sale",
+               "value": "30"
+            }
+         ],
+         "image": "img/tim.png",
+         "price": "17$"
+      }
+   ]
+}

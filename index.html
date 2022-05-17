@@ -5,6 +5,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/style.css">
+   <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
    <!-- Заголовок страницы в браузере -->
    <title>Ot3D.ru</title>
    <!-- Кодировка страницы -->
@@ -53,7 +54,7 @@
 
 <body>
    <div class="wrapper">
-      <header class="header">
+      <header class="header _header-resize _header-show _show _cart">
    <div class="header__top ">
       <div class="header__top-content _container">
          <ul data-spollers="767,max" data-da=".header__menu-content,767,1" class="header__top-list">
@@ -61,23 +62,27 @@
             <!--<li><a href="" class="header__top-link">Новинки</a></li>-->
             <!--<li><a href="" class="header__top-link">Видео</a></li>-->
             <li class="sub-menu-title ">
-               <span class="header__top-link sub-menu__arrow">Социальные сети</span>
-               <span data-spoller class="arrow-down _arrow">
+               <span class="header__top-link sub-menu__arrow _not-link">Социальные сети</span>
+               <span data-spoller class="arrow-down _arrow _header">
                   <span class="arrow-down-content"></span>
                </span>
                <div class="sub-menu header__sub-menu">
                   <ul class="sub-menu__list">
                      <li><a href="" class="sub-menu__link icon-instagram">Инстаграм</a></li>
                      <li><a href="" class=" sub-menu__link icon-telegram">Телеграм</a></li>
-                     <li><a href="" class="sub-menu__link icon-facebook">Facebook</a></li>
+                     <li><a href="" class="sub-menu__link icon-facebook">Facebook</a>
+                     </li>
+                     <li><a href="" class="sub-menu__link icon-youtube">YouTube</a>
+                     </li>
                   </ul>
                </div>
             </li>
             <li><a href="" class="header__top-link _link-phone">+38 (067) 829 30 30</a></li>
          </ul>
          <div class="header__sign">
-            <a href="#" class="header__login"><span class="icon-login"></span>Вход</a>
-            <a href="#" class="header__register waves-effect waves-light _orange-button">Регистрация</a>
+            <a href="#" data-pop=".reg__popap" class="header__login"><span class="icon-login"></span>Вход</a>
+            <a href="#" data-pop=".reg__popap"
+               class="header__register waves-effect waves-light _orange-button">Регистрация</a>
          </div>
       </div>
    </div>
@@ -90,12 +95,12 @@
          <div class="header__logo _mob _ibg">
             <img src="img/logo.svg" alt="">
          </div>
-         <nav class="header__menu">
+         <nav class="header__menu _show _header-show _header-resize _menu-open">
             <div class="header__menu-content">
                <ul class="header__bottom-list">
                   <li class="header__bottom-link"><a href="#">Акции</a></li>
                   <li class="header__bottom-link"><a href="#">Контакты</a></li>
-                  <li class="header__bottom-link"><a href="#">Каталог</a></li>
+                  <!--<li class="header__bottom-link"><a href="#">Каталог</a></li>-->
                </ul>
             </div>
          </nav>
@@ -107,17 +112,17 @@
             <div class="header__find__button">
                <span class="icon-find"></span>
             </div>
-            <div class="header__favorite">
+            <!--<div class="header__favorite">
                <span class="icon-heart"></span>
-               <span class="favorite-number _num">25</span>
-            </div>
-            <div class="header__cart">
+               <span class="favorite-number _num"></span>
+            </div>-->
+            <div class="header__cart _cart">
                <span class="icon-cart"></span>
-               <span class="header__cart-num _num">5</span>
+               <!--<span class="header__cart-num _num"></span>-->
             </div>
-            <div class="header__price">26$</div>
+            <div class="header__price">0$</div>
             <span class="header__burger waves-effect">
-               <div class="header__burger-body">
+               <div class="header__burger-body _menu-open">
                   <span></span>
                </div>
             </span>
@@ -125,60 +130,134 @@
       </div>
    </div>
 </header>
-      <main class="page">
-
+      <main class="page _menu-open">
+         <div class="reg__popap reg _popap">
+            <div class="error-reg _popap-body">
+               <div class="error-reg__close _button-burger  waves-effect waves-light _close">
+                  <div class="_button-burger-body _active">
+                     <span></span>
+                  </div>
+               </div>
+               <div class="error-reg__body">
+                  <img src="img/icon/warning.svg" alt="" class="error-reg__image">
+                  <div class="error-reg__title">В данный момент это функция недоступна, мы уже работаем над решением
+                     этой проблемы.
+                  </div>
+                  <div class="error-reg__button _close _btn _danger-button waves-effect">Закрыть</div>
+               </div>
+               <!--<div class="reg__content">
+               <div class="reg__title">Регистрация</div>
+               <div class="reg__body">
+                  <form action="" class="reg__form _reg-form">
+                     <div class="reg__form-item">
+                        <label for="email" class="reg__form-title"></label>
+                        <input type="email" name="email" id="">
+                     </div>
+                     <div class="reg__form-item">
+                        <label for="password" class="reg__form-title"></label>
+                        <input type="password" name="password" id="">
+                     </div>
+                     <button class="reg__form-button _orange-button" type="submit">Регистрация</button>
+                  </form>
+               </div>
+            </div>-->
+            </div>
+         </div>
          <div class="page__content _container">
-            <aside class="sidebar">
-               <div class="sidebar__title icon-menu">Каталог товаров</div>
-               <ul class=" sidebar__list">
-                  <li class="sidebar__link">
-                     <a class="waves-effect waves-ripple _sidebar-link" href="#">Беспланые</a>
-                  </li>
-                  <li class="sidebar__link">
-                     <a class="waves-effect waves-ripple _sidebar-link" href="#">Диваны</a>
-                  </li>
-                  <li class="sidebar__link">
-                     <a class="waves-effect waves-ripple _sidebar-link" href="#">Столы</a>
-                  </li>
-                  <li class="sidebar__link">
-                     <a class="waves-effect waves-ripple _sidebar-link" href="#">Багеты</a>
-                  </li>
-                  <li class="sidebar__link">
-                     <a class="waves-effect waves-ripple _sidebar-link" href="#">Арки</a>
-                  </li>
-                  <li class="sidebar__link">
-                     <a class="waves-effect waves-ripple _sidebar-link" href="#">Беспланые</a>
-                  </li>
-                  <li class="sidebar__link">
-                     <a class="waves-effect waves-ripple _sidebar-link" href="#">Беспланые</a>
-                  </li>
-                  <li class="sidebar__link">
-                     <a class="waves-effect waves-ripple _sidebar-link" href="#">Беспланые</a>
-                  </li>
-                  <li class="sidebar__link">
-                     <a class="waves-effect waves-ripple _sidebar-link" href="#">Беспланые</a>
-                  </li>
-                  <li class="sidebar__link">
-                     <a class="waves-effect waves-ripple _sidebar-link" href="#">Беспланые</a>
-                  </li>
-                  <li class="sidebar__link">
-                     <a class="waves-effect waves-ripple _sidebar-link" href="#">Беспланые</a>
-                  </li>
-               </ul>
+            <aside data-spollers="767,max" data-da=".header__bottom-list,767,first" class="sidebar _header-resize">
+               <div class="sidebar__content">
+                  <div data-spoller class="sidebar__title icon-menu">Каталог товаров
+                     <span class="arrow-down">
+                        <span class="arrow-down-content"></span>
+                     </span>
+                  </div>
+                  <ul class=" sidebar__list">
+                     <li class="sidebar__link">
+                        <a class="waves-effect waves-ripple _sidebar-link" href="#">Беспланые</a>
+                     </li>
+                     <li class="sidebar__link">
+                        <a class="waves-effect waves-ripple _sidebar-link" href="#">Диваны</a>
+                     </li>
+                     <li class="sidebar__link">
+                        <a class="waves-effect waves-ripple _sidebar-link" href="#">Столы</a>
+                     </li>
+                     <li class="sidebar__link">
+                        <a class="waves-effect waves-ripple _sidebar-link" href="#">Багеты</a>
+                     </li>
+                     <li class="sidebar__link">
+                        <a class="waves-effect waves-ripple _sidebar-link" href="#">Арки</a>
+                     </li>
+                  </ul>
+               </div>
             </aside>
             <div class="page__first first">
-               <div class=" first-screen__background">
+               <div class="first__content _cart">
+                  <div class="cart">
+                     <div class="cart__content">
+                        <div class="cart__top-menu _cart">
+                           <h2 class="cart__title">Корзина</h2>
+                           <div class="_close-cart header__cart">
+                              <img src="img/arrow-right.svg" alt="arrow-right arrows">
+                           </div>
+                        </div>
+                        </span>
+                        <div class="cart__row">
+                           <div class="cart__products"></div>
+                           <div class="cart__order order-cart _cart">
+                              <div class="order-cart__info">
+                                 <div class="order-cart__price">Цена: <span id="order-cart-old-price">0</span>$</div>
+                                 <div class="order-cart__sale">Скидка: <span id="order-cart-sale">0</span>$</div>
+                                 <div class="order-cart__main-price">Всего: <span id="order-cart-main-price">0</span>$
+                                 </div>
+                              </div>
+                              <a href="" class="order-cart__order _orange-button">Оформить</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="first-screen__background">
+                  </div>
+                  <h1 class="first__title"><span>3D</span> МОДЕЛИ ДЛЯ ФРЕЗЕРНЫХ
+                     СТАНКОВ С ЧПУ В STL ФОРМАТЕ</h1>
+                  <div loading="lazy" class="first__image _img">
+                     <img src="img/first-screen-img.png" alt="">
+                  </div>
+                  <div class="first__buttons">
+                     <a href="" class="first__button _orange-button waves-effect waves-light">Примеры выполненных
+                        работ</a>
+                     <a href="" class="first__button _primary-button waves-effect waves-light">заказать эксклюзивные
+                        модели</a>
+                  </div>
                </div>
-               <h1 class="first__title"><span>3D</span> МОДЕЛИ ДЛЯ ФРЕЗЕРНЫХ <br>
-                  СТАНКОВ С ЧПУ В STL ФОРМАТЕ</h1>
-               <div loading="lazy" class="first__image _img">
-                  <img src="img/first-screen-img.png" alt="">
-               </div>
-               <div class="first__buttons">
-                  <a href="" class="first__button _orange-button waves-effect waves-light">Примеры выполненных работ</a>
-                  <a href="" class="first__button _primary-button waves-effect waves-light">заказать эксклюзивные
-                     модели</a>
-               </div>
+               <section data-da=".page,992,2" class="page__products products">
+                  <div class="products__content">
+                     <div class="products__row">
+                        <!--<article href="" data-pid="0" data-pn="pop1" class="products__item">
+                           <a data-description="Hello" data-type="image" href="img/products.jpg"
+                              class="products__image _img">
+                              <img src="img/products.jpg" class="glightbox" alt="">
+                              <div class="products__labels">
+                                 <div class="products _sale">-15%</div>
+                                 <div class="products _new">New</div>
+                              </div>
+                           </a>
+                           <div class="products__body">
+                              <div class="products__title">
+                                 Капитель 052, STL модель ЧПУ
+                              </div>
+                              <span class="products__price"><span class="products__price-main">15$</span><sup
+                                    class="products__price-old">19$</sup></span>
+
+                              <div class="products__row-buttons">
+                                 <a href="" class="products__button-cart _orange-button waves-effect waves-light">купить
+                                    <span class="icon-cart"></span></a>
+                              </div>
+                           </div>
+                        </article>-->
+                     </div>
+                     <a href="" class="products__button _download-products _orange-button _btn">Показать больше</a>
+                  </div>
+               </section>
             </div>
          </div>
       </main>
@@ -191,36 +270,36 @@
          <div class="footer__text">На нашем сайте продается
             более 50+ качественных
             stl моделей </div>
-         <a href="" class="footer__location"><img src="img/icon/location.svg" alt="">Сергелийский район, Ташкент,
-            Узбекистан
-         </a>
-         <a href="" class="footer__phone"><img src="img/icon/phone.svg" alt="">+6289 456 3455
-         </a>
       </div>
       <div data-spollers="550,max" class="footer__row">
-         <div class="footer__item">
-            <div data-spoller class="footer__list-title">Меню <span class="arrow-down">
-                  <div class="arrow-down-content"></div>
-               </span></div>
-            <ul class="footer__list">
-               <li><a href="" class="footer__link">Контакты</a></li>
-               <li><a href="" class="footer__link">Информация</a></li>
-               <li><a href="" class="footer__link">О нас</a></li>
-            </ul>
-         </div>
          <div class="footer__item">
             <div data-spoller class="footer__list-title">Аккаутн <span class="arrow-down">
                   <div class="arrow-down-content"></div>
                </span></div>
             <ul class="footer__list">
                <li><a href="" class="footer__link">Мой аккаунт</a></li>
-               <li><a href="" class="footer__link">Моя карзина</a></li>
+               <!--<li><a href="" class="footer__link">Моя карзина</a></li>-->
                <li><a href="" class="footer__link">Восстановление</a></li>
                <li><a href="" class="footer__link">Выход</a></li>
             </ul>
          </div>
          <div class="footer__item">
-            <div class="footer__list-title">Социальных сети</div>
+            <div data-spoller class="footer__list-title">Меню <span class="arrow-down">
+                  <div class="arrow-down-content"></div>
+               </span></div>
+            <ul class="footer__list">
+               <li><a href="" class="footer__link">Контакты</a></li>
+               <li><a href="" class="footer__link">Условия пользования</a></li>
+               <li><a href="" class="footer__link">О нас</a></li>
+            </ul>
+         </div>
+         <div class="footer__item">
+            <div class="footer__list-title">Контакты </div>
+            <a href="" class="footer__location"><img src="img/icon/location.svg" alt="">Сергелийский район, Ташкент,
+               Узбекистан
+            </a>
+            <a href="" class="footer__phone"><img src="img/icon/phone.svg" alt="">+6289 456 3455
+            </a>
             <ul class="footer__messanger-row">
                <a href="#" class="icon-instagram"></a>
                <a href="#" class="icon-youtube"></a>
@@ -229,10 +308,20 @@
             </ul>
          </div>
       </div>
-      <div class="footer__accept">2022 ot3d. Все права защищены</div>
+   </div>
+   <div class="footer__accept _container">2022 ot3d. Все права защищены</div>
 </footer>
    </div>
    <script src="js/app.min.js"></script>
+   <script>
+      const lightbox = GLightbox({
+         touchNavigation: true,
+         //loop: true,
+         autoplayVideos: true,
+         zoomable: true,
+         //draggable: true,
+      });
+   </script>
 </body>
 
 </html>
