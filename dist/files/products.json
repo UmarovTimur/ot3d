@@ -50,19 +50,6 @@
          "labels": [],
          "image": "img/products.jpg",
          "price": "31$"
-      },
-      {
-         "id": 5,
-         "title": "3d models",
-         "name": "prod5",
-         "labels": [
-            {
-               "type": "sale",
-               "value": "30"
-            }
-         ],
-         "image": "img/tim.png",
-         "price": "17$"
       }
    ]
 }
